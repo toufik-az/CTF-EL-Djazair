@@ -1,0 +1,9 @@
+Hint 1: "The serpent starts at its tail, and nothing shines in a moonless sky."
+
+    "serpent starts at its tail" → Read from the end (reverse the text)
+    "nothing shines in a moonless sky" → The key is "moonless"
+
+Hint 2: "Eight dark phases steer the cipher—turn them over the text once you've read it in the mirror."
+
+    "read it in the mirror" → Reverse/invert the text
+    "turn them over" → Apply the cipher transformation

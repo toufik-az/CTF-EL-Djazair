@@ -1,0 +1,97 @@
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+\title{The Ouroboric Seal: Fractal Ward}
+\author{Archivum Hermeticum, Folio 27b}
+\date{}
+\maketitle
+
+\section*{Preamble}
+
+Deep beneath desert sands lies the \emph{Vault of Recursion}, its bronze tablet engraved with looping glyphs and algebraic wards.  
+Only those versed in the algebra of strings and group--actions may hope to unbind its seal.
+
+\section*{Fractal Inscription}
+
+Define the sequence \(f_n\) over the free monoid \(\Sigma^{\!*}\):
+
+\[
+\boxed{%
+f_0 = \varepsilon,\qquad
+f_{n+1} = \sigma_0 \;\Vert\; f_n \;\Vert\; \sigma_1},
+\]
+
+where
+\[
+\sigma_0 = \text{\tt ``El-DjazairCTF\{"},\qquad
+\sigma_1 = \text{\tt ``\}''},
+\]
+and \(\Vert\) denotes concatenation.  Thus
+\[
+\begin{aligned}
+f_1 &= \sigma_0\sigma_1,\\
+f_2 &= \sigma_0 f_1 \sigma_1,\\
+f_3 &= \sigma_0 f_2 \sigma_1,\\
+&\;\,\vdots\\
+f_6 &= \sigma_0^6 \sigma_1^6.
+\end{aligned}
+\]
+
+\section*{Key--Streams}
+
+Let \(\operatorname{letters}(x)\) strip every non--alphabetic character and map the result to uppercase.
+Set
+\[
+\kappa_1 = \operatorname{letters}(f_1),\qquad
+\kappa_2 = \operatorname{letters}(f_2),\qquad
+\kappa_3 = \operatorname{letters}(f_3).
+\]
+Numerically,
+\[
+|\kappa_1| = 12,\quad
+|\kappa_2| = 24,\quad
+|\kappa_3| = 36.
+\]
+
+\section*{Spectral Rotation Operator}
+
+For any periodic key \(k=(k_i)\in\mathbb Z_{26}^{\infty}\) and plaintext \(s\in\Sigma^{\!*}\),
+define the ``spectral rotation''
+\[
+E_k(s)_j =
+\begin{cases}
+s_j, & s_j \notin A{:}Z,\\[6pt]
+\bigl(s_j + k_{\,j\bmod |k|}\bigr)\bmod 26, & s_j \in A{:}Z,
+\end{cases}
+\]
+\emph{advancing the key index \(j\) on \textbf{every} character}.
+
+Its inverse \(D_k = E_k^{-1}\) subtracts the same key value.
+
+\section*{Triple Ward}
+
+The adepts sealed the sixth echo by nesting three rotations:
+\[
+C \;=\; E_{\kappa_1}\!\Bigl(E_{\kappa_2}\!\bigl(E_{\kappa_3}(f_6)\bigr)\Bigr).
+\]
+
+\section*{Inversion Challenge}
+
+To awaken the Dormant Echo, compute
+\[
+f_6 = D_{\kappa_3}\!\Bigl(D_{\kappa_2}\!\bigl(D_{\kappa_1}(C)\bigr)\Bigr),
+\]
+and read the living chant concealed at recursion depth six.
+
+\bigskip\noindent
+\textbf{Archivist's Caution:}  
+Keys are \emph{not} words but recursive shadows of the very flag;  
+every brace, dash, or digit shifts the key index;  
+and three distinct layers bar the careless from easy victory.
+
+\end{document}

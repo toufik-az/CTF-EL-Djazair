@@ -1,0 +1,24 @@
+From: Prof. Dr. Erwin H. e.h@vienna-quantum.uni To: Lab Group Q-27 (restricted) Date: 23 May 2025 14:37 CET Subject: Custody transfer – specimen “psi_box_key2.bin”
+
+Dear colleagues,
+
+The archive has authorised a single-view release of the attached binary, catalogued as psi_box.bin. According to the late Dr Planck’s margin notes, the file embodies a dual-basis eigenstate:
+
+• Photon frame – if probed optically, it projects nothing more than an image of a lifeless waveform.
+
+• Lattice frame – if inspected structurally, the same bytes rearrange into a compact knot of three mis-directions and one sealed chamber.
+
+Please observe normal protocol: record hashes before and after every measurement, avoid collapse by rumour, and remember that not every constant in physics begins with “c”.
+
+NB: Planck loved to hide things in plain sight—usually in the order of his digits.
+
+SHA-256 (master copy):
+30cd38d4154e04ce2e49c75d8f4f502327dfe913662cd44a1e1a5ec6b182acdc
+
+Your discretion—and patience—will keep the waveform coherent.
+
+Regards,
+
+Prof. Dr. Erwin H.
+Institute for Quantum Interpretations
+Vienna Natural-Philosophy Archive
